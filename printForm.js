@@ -51,7 +51,7 @@ async function populatePage(data) {
 function showPage() {
     document.getElementById('loadingAnimationSection').style.display = "none";
     for (let i = 1; i < 5; i++) {
-       document.getElementById(`mainSection${1}`).style.display = "none";
+       document.getElementById(`mainSection${1}`).style.display = "block";
     }
 }
 

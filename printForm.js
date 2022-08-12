@@ -44,28 +44,12 @@ function populatePage(dataArray) {
     
 //populate using arrays
     for (let i = 1; i < 4; i++) {
-
         document.getElementById(`goal${i}`).innerHTML = goal[i-1];
         document.getElementById(`parentalStrategies${i}`).innerHTML = parentalStrategies[i-1];
         document.getElementById(`nextStep${i}`).innerHTML = nextSteps[i-1];
-        document.getElementById(`goal${i}`).innerHTML = data.goal[i];
-        document.getElementById(`parentalStrategies${i}`).innerHTML = data.parentalStrategies[i];
-        document.getElementById(`nextSteps${i}`).innerHTML = data.nextSteps[i];
-    }
-
-    document.getElementById('staffName').innerHTML = data.staffName;
-    showPage()
-}
-
-function showPage() {
-    document.getElementById('loadingAnimationSection').style.display = "none";
-    for (let i = 1; i < 5; i++) {
-       document.getElementById(`mainSection${1}`).style.display = "block";
     }
 }
 
-printForm.addEventListener('click', (e) => {window.print()})
-let upload = document.getElementById('upload')
 upload.addEventListener('click', (e) => {document.getElementById('uploadEmbed').style.display = 'inline';})
 
 

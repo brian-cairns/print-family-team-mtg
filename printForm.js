@@ -44,11 +44,10 @@ function populatePage(dataArray) {
     
 //populate using arrays
     for (let i = 1; i < 4; i++) {
-<<<<<<< HEAD
+
         document.getElementById(`goal${i}`).innerHTML = goal[i-1];
         document.getElementById(`parentalStrategies${i}`).innerHTML = parentalStrategies[i-1];
         document.getElementById(`nextStep${i}`).innerHTML = nextSteps[i-1];
-=======
         document.getElementById(`goal${i}`).innerHTML = data.goal[i];
         document.getElementById(`parentalStrategies${i}`).innerHTML = data.parentalStrategies[i];
         document.getElementById(`nextSteps${i}`).innerHTML = data.nextSteps[i];
@@ -62,7 +61,6 @@ function showPage() {
     document.getElementById('loadingAnimationSection').style.display = "none";
     for (let i = 1; i < 5; i++) {
        document.getElementById(`mainSection${1}`).style.display = "block";
->>>>>>> 7d69905a95c0dd8b6b859e87f601d6be67821632
     }
 }
 
@@ -71,7 +69,6 @@ let upload = document.getElementById('upload')
 upload.addEventListener('click', (e) => {document.getElementById('uploadEmbed').style.display = 'inline';})
 
 
-<<<<<<< HEAD
 async function uploadFile() {
   let formData = new FormData(); 
   formData.append("fileupload", fileupload.files[0]);
@@ -88,6 +85,3 @@ async function uploadFile() {
 async function handleResponse(data) { 
     //send notices to 3
 }
-=======
-//send notices to 3
->>>>>>> 7d69905a95c0dd8b6b859e87f601d6be67821632
